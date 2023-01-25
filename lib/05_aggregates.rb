@@ -62,9 +62,7 @@ def group_population
       SUM(population)
     FROM
       countries
-    WHERE name = 'France'
-      OR name = 'Germany'
-      OR name = 'Spain'
+    WHERE name IN ('France','Germany','Spain')
   SQL
 end
 
